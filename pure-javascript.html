@@ -1,0 +1,37 @@
+<script src="pure-javascript.js"></script>
+<title>Pure Javascript example for Anti-Captcha.com</title>
+
+
+<body>
+
+API key *:
+<input type="text" id="apikey" placeholder="Your API key" value=""><br>
+<br>
+Recaptcha v2 details:<br>
+
+Domain *:
+<input type="text" id="domain" placeholder="Recaptcha domain" value="makeawebsitehub.com"><br>
+
+Sitekey *:
+<input type="text" id="sitekey" placeholder="Recaptcha sitekey" value="6LfI9IsUAAAAAKuvopU0hfY8pWADfR_mogXokIIZ"><br>
+
+Secret (for instant result quality check, available only for person who registered this sitekey):<br>
+<input type="text" id="secret" placeholder="Recaptcha secret" value="6LfI9IsUAAAAAAzPsrgGKsQVlfnRs8OYeOmdxd-Q"><br>
+
+<button onmousedown="createTask();" id="createTaskButton">Create test task</button>
+
+
+<br><br><br>
+<div id="testGetResult" style="display: none">
+Task ID to check: <input type="text" id="taskId"><br>
+<button onmousedown="getTaskResult();" id="getTaskResultButton">Check task result</button>
+<div id="taskStatus"></div>
+
+
+<br><br><br>
+<div id="testGResponse" style="display: none">
+    G-response:<br>
+    <textarea id="gresponse" cols="50" rows="10"></textarea>
+</div>
+
+</body>
