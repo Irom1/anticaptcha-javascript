@@ -1,4 +1,4 @@
-# anticaptcha-javascript
-Example to access Anti-Captcha.com API with javascript
+# hCaptcha-anticaptcha-js
+Example to access Anti-Captcha.com hCaptcha API with javascript
 
-Open pure-javascript.html, enter your API key and see in browser console API output.
+Open hCaptcha.html, enter your API key and see in browser console API output.
