@@ -1,0 +1,37 @@
+<script src="hCaptcha.js"></script>
+<title>hCaptcha javascript example for Anti-Captcha.com</title>
+
+
+<body>
+
+API key *:
+<input type="text" id="apikey" placeholder="Your API key" value=""><br>
+<br>
+hCaptcha details:<br>
+
+Domain *:
+<input type="text" id="domain" placeholder="hCaptcha domain" value="irom.ga"><br>
+
+Sitekey *:
+<input type="text" id="sitekey" placeholder="hCaptcha sitekey" value="abcf9164-4a66-494e-ae19-2b0b0068cef9"><br>
+
+<span style="display:none;">Secret (for instant result quality check, available only for person who registered this sitekey):<br>
+<input type="text" id="secret" placeholder="hCaptcha secret" value=""><br></span>
+
+<button onmousedown="createTask();" id="createTaskButton">Create test task</button>
+
+
+<br><br><br>
+<div id="testGetResult" style="display: none">
+Task ID to check: <input type="text" id="taskId"><br>
+<button onmousedown="getTaskResult();" id="getTaskResultButton">Check task result</button>
+<div id="taskStatus"></div>
+
+
+<br><br><br>
+<div id="testGResponse" style="display: none">
+    G-response:<br>
+    <textarea id="gresponse" cols="50" rows="10"></textarea>
+</div>
+
+</body>
